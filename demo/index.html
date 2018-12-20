@@ -1,0 +1,50 @@
+<html>
+<header>
+    <title>vue-quicklink-component demo</title>
+    <style>
+        img {
+            height: 20vh;
+        }
+        svg {
+            height: 5vh;
+        }
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem;
+        }
+        .link-container {
+            text-align: center;
+            font-size: 1.25rem;
+        }
+    </style>
+</header>
+
+<body>
+    <div id="app"></div>
+    <script src="https://cdn.bootcss.com/vue/2.5.21/vue.min.js"></script>
+    <script src="../build/index.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            template: `
+                <quicklink>
+                    <div class="img-container">
+                        <img src="https://camo.githubusercontent.com/d9e978c30d6e62fa13b4aea5af2560eebb67e20f/68747470733a2f2f692e696d6775722e636f6d2f4e56525a4c48762e706e67">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                            <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                            <g><path d="M962.2,13.3l24.4,24.4L34.4,989.8L10,965.5L962.2,13.3z"/><path d="M39.2,10L990,960.9L960.9,990L10.1,39.1L39.2,10L39.2,10z"/></g>
+                        </svg>
+                        <img src="https://cn.vuejs.org/images/logo.png">
+                    </div>
+                    <div class="link-container">
+                        <a href="https://www.bilibili.com/">quicklink bilibili</a>
+                    </div>
+                </quicklink>
+            `,
+        });
+    </script>
+</body>
+
+</html>
